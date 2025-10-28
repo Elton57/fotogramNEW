@@ -1,0 +1,16 @@
+:root{
+    --main-color: antiquewhite;
+  --second-color: #D2B48C;
+  --font: 'Caprasimo', sans-serif;
+}
+
+@font-face{
+  font-family: 'Caprasimo';
+  src: url('./fonts/Caprasimo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+
+}
