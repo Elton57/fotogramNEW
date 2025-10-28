@@ -25,6 +25,15 @@ header img {
     width: 450px;
 }
 
+main h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 36px;
+    font-weight: 400;
+    padding: 25px 0 15px 0;
+}
+
 .ImgSelector {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -70,4 +79,5 @@ footer {
 
 .socialmediaSection img {
     width: 50px;
+    cursor: pointer;
 }
