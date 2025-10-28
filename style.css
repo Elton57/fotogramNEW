@@ -31,7 +31,8 @@ header img {
     gap: 50px;
     padding: 50px 16px 70px;
     max-width: 1400px;
-    margin: 0 auto;;
+    margin: 0 auto;
+    ;
     min-width: 0;
 
 }
@@ -40,12 +41,12 @@ main img {
     width: 200px;
     height: 200px;
     border-radius: 16px;
-    
+
 }
 
-main img:hover{
-    border-radius: solid black 2px;
-
+main img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
