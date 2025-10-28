@@ -11,8 +11,9 @@
     font-style: normal;
 }
 
-body{
+body {
     margin: 0px;
+    background-color: var(--main-color);
 }
 
 header {
@@ -20,21 +21,52 @@ header {
     padding: 15px 0 15px 30px;
 }
 
-header img{
+header img {
     width: 450px;
 }
 
-.ImgSelector{
+.ImgSelector {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 50px;
-  padding: 0 16px 48px;
-  max-width: 1400px;     /* optionales zentriertes Content-Limit */
-  margin: 0 auto;
-  min-width: 0;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 50px;
+    padding: 50px 16px 70px;
+    max-width: 1400px;
+    margin: 0 auto;;
+    min-width: 0;
 
 }
-main img{
+
+main img {
     width: 200px;
     height: 200px;
+    border-radius: 16px;
+    
+}
+
+main img:hover{
+    border-radius: solid black 2px;
+
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+
+.logoFooter {
+    width: 450px;
+}
+
+.socialmediaSection {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialmediaSection img {
+    width: 50px;
 }
