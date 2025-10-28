@@ -1,16 +1,40 @@
-:root{
+:root {
     --main-color: antiquewhite;
-  --second-color: #D2B48C;
-  --font: 'Caprasimo', sans-serif;
+    --second-color: #D2B48C;
+    --font: 'Caprasimo', sans-serif;
 }
 
-@font-face{
-  font-family: 'Caprasimo';
-  src: url('./fonts/Caprasimo-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('./fonts/Caprasimo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-header{
+body{
+    margin: 0px;
+}
 
+header {
+    background-color: var(--second-color);
+    padding: 15px 0 15px 30px;
+}
+
+header img{
+    width: 450px;
+}
+
+.ImgSelector{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 50px;
+  padding: 0 16px 48px;
+  max-width: 1400px;     /* optionales zentriertes Content-Limit */
+  margin: 0 auto;
+  min-width: 0;
+
+}
+main img{
+    width: 200px;
+    height: 200px;
 }
