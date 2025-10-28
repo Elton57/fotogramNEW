@@ -19,34 +19,46 @@
         <div>
             <h1></h1>
         </div>
-        <div class="ImgSelector">
-            <img src="./img/amman.jpg" alt="Amman">
-            <img src="./img/zurich.jpg" alt="Zürich">
-            <img src="./img/hongkong.jpg" alt="Hong Kong">
-            <img src="./img/frankfurt.jpg" alt="Frankfurt">
-            <img src="./img/boston.jpg" alt="Boston">
-            <img src="./img/dresden.jpg" alt="Dresden">
-            <img src="./img/paris.jpg" alt="Paris">
-            <img src="./img/venedig.jpg" alt="venedig">
-            <img src="./img/santorini.jpg" alt="Santorini">
-            <img src="./img/singapore.jpg" alt="Singapore">
-            <img src="./img/singapore.jpg" alt="Singapore">
-            <img src="./img/tokyo.jpg" alt="Tokyo">
-            <img src="./img/new-york.jpg" alt="New York">
-            <img src="./img/monschau.jpg" alt="Monschau">
-            <img src="./img/madrid.jpg" alt="Madrid">
-            <img src="./img/york.jpg" alt="York UK">
-            <img src="./img/busan.jpg" alt="Busan">
-            <img src="./img/istanbul.jpg" alt="Istanbul">
-
-            <dialog>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </dialog>
+        <div class="ImgSelector" id="imgGallery">
+            <img class="mainImg" src="./img/amman.jpg" alt="Amman">
+            <img class="mainImg" src="./img/zurich.jpg" alt="Zürich">
+            <img class="mainImg" src="./img/hongkong.jpg" alt="Hong Kong">
+            <img class="mainImg" src="./img/frankfurt.jpg" alt="Frankfurt">
+            <img class="mainImg" src="./img/boston.jpg" alt="Boston">
+            <img class="mainImg" src="./img/dresden.jpg" alt="Dresden">
+            <img class="mainImg" src="./img/paris.jpg" alt="Paris">
+            <img class="mainImg" src="./img/venedig.jpg" alt="venedig">
+            <img class="mainImg" src="./img/santorini.jpg" alt="Santorini">
+            <img class="mainImg" src="./img/singapore.jpg" alt="Singapore">
+            <img class="mainImg" src="./img/singapore-sg.jpg" alt="Singapore">
+            <img class="mainImg" src="./img/tokyo.jpg" alt="Tokyo">
+            <img class="mainImg" src="./img/new-york.jpg" alt="New York">
+            <img class="mainImg" src="./img/monschau.jpg" alt="Monschau">
+            <img class="mainImg" src="./img/madrid.jpg" alt="Madrid">
+            <img class="mainImg" src="./img/york.jpg" alt="York UK">
+            <img class="mainImg" src="./img/busan.jpg" alt="Busan">
+            <img class="mainImg" src="./img/istanbul.jpg" alt="Istanbul">
         </div>
+
+        <dialog class="dialogSection" id="dialog-box">
+            <div>
+                <img class="dialogBtn" id="close-btn" src="./logo/kreuzen.png" alt="X">
+            </div>
+
+            <div class="imgName" id="filename"></div>
+
+            <div>
+                <img class="dialog-gallery" id="dialog-img" src="" alt="">
+            </div>
+
+            <div class="counterContainer" id="counter">1 / 18</div>
+
+            <div class="direction-container">
+                <img class="dialog-btn" id="back-btn" src="./logo/pfeil-nach-links.png" alt="Zurück">
+                <img class="dialog-btn" id="next-btn" src="./logo/pfeil-rechts (1).png" alt="Weiter">
+            </div>
+        </dialog>
+
     </main>
 
     <footer>
