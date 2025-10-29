@@ -10,3 +10,23 @@ const filanme = document.getElementById('filname');
 const images = Array.from(document.querySelectorAll('.mainImg'));
 let currentIndex = 0;
 
+function ImgNames(SRC) {
+    let name = screen.split('/').pop();
+    name = name.split('.')[0];
+    name = name.replace(/[_-]+/g, ' ');
+    name = name.replace(/\b\w/g, c => c.toUpperCase());
+    return name;
+}
+
+images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        currentIndex = index;
+        DialogImg.src = img.src;
+        dialogRef.schowModal();
+        counter.textContent = `${currentIndex + 1} / ${images.length}`;
+
+        filanme.textContent = makeName(img.src);
+
+    });
+});
+
