@@ -30,3 +30,13 @@ images.forEach((img, index) => {
     });
 });
 
+backBtn,addEventListener('click', () =>{
+    currentIndex = (currentIndex - 1 + images.length ) % images.length;
+    DialogImg.src = images[currentIndex].src;
+    counter.textContent = `${currentIndex + 1} / ${images.length}`;
+
+    filanme.textContent = `${currentIndex + 1} / ${images.length}`;
+
+
+});
+
