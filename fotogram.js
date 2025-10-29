@@ -7,6 +7,17 @@ const closeBtn = document.getElementById('close-btn');
 const counter = document.getElementById('counter');
 const filename = document.getElementById('filename');
 
+
+console.log('dialogRef:', dialogRef);
+console.log('closeBtn:', closeBtn);
+console.log('supports <dialog> showModal:', typeof dialogRef?.showModal === 'function');
+
+closeBtn.addEventListener('click', (e) => {
+  console.log('[CLOSE] click on X');
+});
+
+
+
 const images = Array.from(document.querySelectorAll('.mainImg'));
 let currentIndex = 0;
 
@@ -49,6 +60,14 @@ backBtn.addEventListener('click', () =>{
     filename.textContent = ImgNames(images[currentIndex].src);
  });
 
- closeBtn.addEventListener('click', () => {
-    dialogRef.close();
- });
+
+ closeBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // Klick nicht „durchfallen“ lassen
+  dialogRef.close();
+});
+
+dialogRef.addEventListener('click', (e) => {
+  if (e.target === dialogRef) dialogRef.close(); // Backdrop-Klick schließt
+});
+
+

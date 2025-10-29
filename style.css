@@ -86,14 +86,19 @@ footer {
 /*Dialog style*/
 
 .dialogSection{
-    background-color: #e8cda9;
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 600px;
+    display: none;           /* <-- wichtig */
+  background-color: #e8cda9;
+  border-radius: 16px;
+  /* restliche Styles ok */
+  width: 500px;
+  height: 600px;
+}
+
+.dialogSection[open] {
+  display: flex;           /* <-- hierhin verlagern */
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dialogBtn{
