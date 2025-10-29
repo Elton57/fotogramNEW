@@ -50,5 +50,4 @@ backBtn,addEventListener('click', () =>{
 
  closeBtn.addEventListener('click', () => {
     dialogRef.closest();
- })
-;
+ });
