@@ -40,3 +40,12 @@ backBtn,addEventListener('click', () =>{
 
 });
 
+ nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    dialogImg.src = images[currentIndex].src;
+    counter.textContent = `${currentIndex + 1} / ${images.length}`;
+
+    filename.textContent = makeName(images[currentIndex].src);
+ });
+
+ 
