@@ -13,7 +13,7 @@ console.log('closeBtn:', closeBtn);
 console.log('supports <dialog> showModal:', typeof dialogRef?.showModal === 'function');
 
 closeBtn.addEventListener('click', (e) => {
-  console.log('[CLOSE] click on X');
+    console.log('[CLOSE] click on X');
 });
 
 
@@ -42,8 +42,8 @@ images.forEach((img, index) => {
     });
 });
 
-backBtn.addEventListener('click', () =>{
-    currentIndex = (currentIndex - 1 + images.length ) % images.length;
+backBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
     DialogImg.src = images[currentIndex].src;
     counter.textContent = `${currentIndex + 1} / ${images.length}`;
 
@@ -52,22 +52,22 @@ backBtn.addEventListener('click', () =>{
 
 });
 
- nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1 + images.length) % images.length;
     DialogImg.src = images[currentIndex].src;
     counter.textContent = `${currentIndex + 1} / ${images.length}`;
 
     filename.textContent = ImgNames(images[currentIndex].src);
- });
+});
 
 
- closeBtn.addEventListener('click', (e) => {
-  e.stopPropagation(); // Klick nicht „durchfallen“ lassen
-  dialogRef.close();
+closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Klick nicht „durchfallen“ lassen
+    dialogRef.close();
 });
 
 dialogRef.addEventListener('click', (e) => {
-  if (e.target === dialogRef) dialogRef.close(); // Backdrop-Klick schließt
+    if (e.target === dialogRef) dialogRef.close(); // Backdrop-Klick schließt
 });
 
 

@@ -85,40 +85,46 @@ footer {
 
 /*Dialog style*/
 
-.dialogSection{
-    display: none;           /* <-- wichtig */
-  background-color: #e8cda9;
-  border-radius: 16px;
-  /* restliche Styles ok */
-  width: 500px;
-  height: 600px;
+.dialogSection {
+    background-color: #e8cda9;
+    border-radius: 16px;
+
 }
 
-.dialogSection[open] {
-  display: flex;           /* <-- hierhin verlagern */
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
+.dialogBtn {
+    display: flex;
+    justify-content: center;
 }
 
-.dialogBtn{
+.dialogBtn img {
     width: 50px;
     height: 50px;
 }
 
-.directionContainer{
+.directionContainer {
     display: flex;
-    justify-content: space-between;
-    width: 150px;
+    justify-content: space-around;
+    width: 380px;
+}
+
+.directionContainer img {
+    width: 50px;
+    height: 50px;
 }
 
 .imgCounter,
-.imgName{
+.imgName {
     font-family: var(--font);
-    font-size: 24px
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.dialogGallery{
+.dialogGallery {
     width: 380px;
     height: 380px;
+    margin-top: 10px;
 }
+
+/*@media
