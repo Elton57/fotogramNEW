@@ -53,7 +53,7 @@ main img {
 
 }
 
-main img:hover {
+.mainImg:hover {
     transform: scale(1.08);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -80,4 +80,40 @@ footer {
 .socialmediaSection img {
     width: 50px;
     cursor: pointer;
+}
+
+
+/*Dialog style*/
+
+.dialogSection{
+    background-color: #e8cda9;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+}
+
+.dialogBtn{
+    width: 50px;
+    height: 50px;
+}
+
+.directionContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.imgCounter,
+.imgName{
+    font-family: var(--font);
+    font-size: 24px
+}
+
+.dialogGallery{
+    width: 380px;
+    height: 380px;
 }
