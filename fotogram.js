@@ -48,4 +48,7 @@ backBtn,addEventListener('click', () =>{
     filename.textContent = makeName(images[currentIndex].src);
  });
 
- 
+ closeBtn.addEventListener('click', () => {
+    dialogRef.closest();
+ })
+;
