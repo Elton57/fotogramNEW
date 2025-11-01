@@ -62,12 +62,23 @@ nextBtn.addEventListener('click', () => {
 
 
 closeBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Klick nicht „durchfallen“ lassen
+
     dialogRef.close();
 });
 
 dialogRef.addEventListener('click', (e) => {
-    if (e.target === dialogRef) dialogRef.close(); // Backdrop-Klick schließt
+    if (e.target === dialogRef) dialogRef.close();
 });
 
+// --- Tastatursteuerung ---
+document.addEventListener('keydown', (e) => {
+    if (!dialogRef.open) return;                                    
 
+    if (e.key === 'ArrowLeft') {
+        backBtn.click();                                            
+    } else if (e.key === 'ArrowRight') {
+        nextBtn.click();                                             
+    } else if (e.key === 'Escape') {
+        dialogRef.close();                                              
+    }
+});
