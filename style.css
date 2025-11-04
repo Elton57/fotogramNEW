@@ -45,14 +45,13 @@ main h1 {
     max-width: 1400px;
     margin: 0 auto;
     min-width: 0;
-
 }
 
 main img {
     width: 200px;
     height: 200px;
     border-radius: 16px;
-
+    object-fit: cover;
 }
 
 .mainImg:hover {
@@ -88,20 +87,18 @@ footer {
 /*Dialog style*/
 
 
-.dialogImg{
-width: 200px;
+.dialogImg {
+    width: 200px;
     height: 200px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .dialogSection {
     background-color: #e8cda9;
     border-radius: 16px;
-
 }
 
 .dialogBtn {
@@ -109,6 +106,9 @@ width: 200px;
     justify-content: center;
 }
 
+.btnClose:hover{
+    cursor: pointer;
+}
 .dialogBtn img {
     width: 50px;
     height: 50px;
@@ -117,7 +117,6 @@ width: 200px;
 .directionContainer {
     display: flex;
     justify-content: space-around;
-
 }
 
 .directionContainer img {
@@ -138,6 +137,7 @@ width: 200px;
     width: 380px;
     height: 380px;
     margin-top: 10px;
+    object-fit: cover;
 }
 
 @media (max-width: 747px) {

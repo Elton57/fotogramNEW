@@ -1,6 +1,7 @@
 const dialogRef = document.getElementById('dialog-box');
 const imgGallery = document.getElementById('imgGallery');
 const imgBox = document.querySelector('.imgBox');
+const closeBtn = document.getElementById('close-btn');
 
 let myImgs = [
     'amman.jpg',
@@ -33,6 +34,11 @@ function openDialog(imgName){
 
 function getNotesHtml(myImgs){
     return `    <div class= "dialogGallery">
-                        <img src="./img/${myImgs}" alt="${myImgs}">
+                        <img class="dialogGallery" src="./img/${myImgs}" alt="${myImgs}">
                  </div>`
+}
+
+
+function closeDialog(){
+    dialogRef.close();
 }
