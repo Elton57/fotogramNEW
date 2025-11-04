@@ -106,15 +106,15 @@ footer {
     justify-content: center;
 }
 
-.btnClose:hover{
+.btnClose:hover {
     cursor: pointer;
 }
 
-.backBtn:hover{
+.backBtn:hover {
     cursor: pointer;
 }
 
-.nextBtn:hover{
+.nextBtn:hover {
     cursor: pointer;
 }
 

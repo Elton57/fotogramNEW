@@ -30,6 +30,17 @@ let myImgs = [
 
 let currentIndex = 0;
 
+function updateDialogImage() {
+    const currentFile = myImgs[currentIndex];
+    imgBox.innerHTML = getNotesHtml(myImgs[currentIndex]);
+    if (counter) {
+        counter.textContent = `${currentIndex + 1} / ${myImgs.length}`;
+    }
+    if (filename) {
+        filename.textContent = currentFile;
+    }
+
+}
 
 function openDialog(imgName) {
     dialogRef.showModal();
@@ -47,6 +58,7 @@ function getNotesHtml(myImgs) {
 
 function closeDialog() {
     dialogRef.close();
+    
 }
 
 function updateDialogImage() {
