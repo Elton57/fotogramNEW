@@ -21,9 +21,9 @@
             <h1>Städte & Architektur</h1>
         </div>
         <div class="ImgSelector" id="imgGallery">
-            <img class="mainImg" src="./img/amman.jpg" alt="Amman">
-            <img class="mainImg" src="./img/zurich.jpg" alt="Zürich">
-            <img class="mainImg" src="./img/hongkong.jpg" alt="Hong Kong">
+            <img onclick="openDialog('amman.jpg')" class="mainImg" src="./img/amman.jpg" alt="Amman">
+            <img onclick="openDialog('Zurich.jpg')" class="mainImg" src="./img/zurich.jpg" alt="Zürich">
+            <img onclick="openDialog('hongkong.jpg')" class="mainImg" src="./img/hongkong.jpg" alt="Hong Kong">
             <img class="mainImg" src="./img/frankfurt.jpg" alt="Frankfurt">
             <img class="mainImg" src="./img/boston.jpg" alt="Boston">
             <img class="mainImg" src="./img/dresden.jpg" alt="Dresden">
@@ -43,14 +43,20 @@
 
         <dialog class="dialogSection" id="dialog-box">
 
+
+            
+
+
             <div class="dialogBtn">
                 <img id="close-btn" src="./logo/kreuzen.png" alt="X">
             </div>
 
             <div class="imgName" id="filename"></div>
 
-            <div>
-                <img class="dialogGallery" id="dialog-img" src="" alt="">
+            <div class="imgBox">
+                <!-- <img class="dialogGallery" id="dialog-img" src="" alt=""> 
+                <img class="dialogGallery" src="./img/amman.jpg" alt="Amman">
+                <img class="dialogGallery" src="./img/zurich.jpg" alt="Zürich">-->
             </div>
 
             <div class="imgCounter" id="counter">1 / 18</div>

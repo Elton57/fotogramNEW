@@ -87,6 +87,17 @@ footer {
 
 /*Dialog style*/
 
+
+.dialogImg{
+width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .dialogSection {
     background-color: #e8cda9;
     border-radius: 16px;
