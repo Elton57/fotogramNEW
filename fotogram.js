@@ -60,6 +60,8 @@ function openDialog(imgName) {
   if (idx !== -1) currentIndex = idx;
   dialogRef.showModal();
   updateDialogImage();
+
+  document.addEventListener("keydown", arrowControl);
 }
 
 function closeDialog() {
@@ -91,4 +93,18 @@ function prev() {
 function next() {
   currentIndex = (currentIndex + 1) % myImgs.length;
   updateDialogImage();
+}
+
+function closeDialog() {
+  document.removeEventListener("keydown", arrowControl);
+  dialogRef.close();
+}
+
+function arrowControl(e) {
+  if (e.key === "ArrowRight") {
+    next();
+  }
+  if (e.key === "ArrowLeft") {
+    prev();
+  }
 }

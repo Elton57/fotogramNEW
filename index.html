@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <img src="./logo/Fotogram_Logo.svg" alt="">
+            <img src="./logo/Fotogram_Logo.svg" alt="Logo FotoGram">
         </nav>
     </header>
 
@@ -21,34 +21,29 @@
             <h1>Städte & Architektur</h1>
         </div>
         <div class="ImgSelector" id="imgGallery">
-            <img onclick="openDialog('amman.jpg')" class="mainImg" src="./img/amman.jpg" alt="Amman">
-            <img onclick="openDialog('zurich.jpg')" class="mainImg" src="./img/zurich.jpg" alt="Zürich">
-            <img onclick="openDialog('hongkong.jpg')" class="mainImg" src="./img/hongkong.jpg" alt="Hong Kong">
-            <img onclick="openDialog('frankfurt.jpg')" class="mainImg" src="./img/frankfurt.jpg" alt="Frankfurt">
-            <img onclick="openDialog('boston.jpg')" class="mainImg" src="./img/boston.jpg" alt="Boston">
-            <img onclick="openDialog('dresden.jpg')" class="mainImg" src="./img/dresden.jpg" alt="Dresden">
-            <img onclick="openDialog('paris.jpg')" class="mainImg" src="./img/paris.jpg" alt="Paris">
-            <img onclick="openDialog('venedig.jpg')" class="mainImg" src="./img/venedig.jpg" alt="venedig">
-            <img onclick="openDialog('santorini.jpg')" class="mainImg" src="./img/santorini.jpg" alt="Santorini">
-            <img onclick="openDialog('singapore.jpg')" class="mainImg" src="./img/singapore.jpg" alt="Singapore">
-            <img onclick="openDialog('singapore-sg.jpg')" class="mainImg" src="./img/singapore-sg.jpg" alt="Singapore">
-            <img onclick="openDialog('tokyo.jpg')" class="mainImg" src="./img/tokyo.jpg" alt="Tokyo">
-            <img onclick="openDialog('new-york.jpg')" class="mainImg" src="./img/new-york.jpg" alt="New York">
-            <img onclick="openDialog('monschau.jpg')" class="mainImg" src="./img/monschau.jpg" alt="Monschau">
-            <img onclick="openDialog('madrid.jpg')" class="mainImg" src="./img/madrid.jpg" alt="Madrid">
-            <img onclick="openDialog('york.jpg')" class="mainImg" src="./img/york.jpg" alt="York UK">
-            <img onclick="openDialog('busan.jpg')" class="mainImg" src="./img/busan.jpg" alt="Busan">
-            <img onclick="openDialog('istanbul.jpg')" class="mainImg" src="./img/istanbul.jpg" alt="Istanbul">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('amman.jpg')" class="mainImg" tabindex="0" src="./img/amman.jpg" alt="Amman">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('zurich.jpg')" class="mainImg" tabindex="0" src="./img/zurich.jpg" alt="Zürich">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('hongkong.jpg')" class="mainImg" tabindex="0" src="./img/hongkong.jpg" alt="Hong Kong">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('frankfurt.jpg')" class="mainImg" tabindex="0" src="./img/frankfurt.jpg" alt="Frankfurt">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('boston.jpg')" class="mainImg" tabindex="0" src="./img/boston.jpg" alt="Boston">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('dresden.jpg')" class="mainImg" tabindex="0" src="./img/dresden.jpg" alt="Dresden">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('paris.jpg')" class="mainImg" tabindex="0" src="./img/paris.jpg" alt="Paris">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('venedig.jpg')" class="mainImg" tabindex="0" src="./img/venedig.jpg" alt="venedig">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('santorini.jpg')" class="mainImg" tabindex="0" src="./img/santorini.jpg" alt="Santorini">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('singapore.jpg')" class="mainImg" tabindex="0" src="./img/singapore.jpg" alt="Singapore">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('singapore-sg.jpg')" class="mainImg" tabindex="0" src="./img/singapore-sg.jpg" alt="Singapore">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('tokyo.jpg')" class="mainImg" tabindex="0" src="./img/tokyo.jpg" alt="Tokyo">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('new-york.jpg')" class="mainImg" tabindex="0" src="./img/new-york.jpg" alt="New York">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('monschau.jpg')" class="mainImg" tabindex="0" src="./img/monschau.jpg" alt="Monschau">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('madrid.jpg')" class="mainImg" tabindex="0" src="./img/madrid.jpg" alt="Madrid">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('york.jpg')" class="mainImg" tabindex="0" src="./img/york.jpg" alt="York UK">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('busan.jpg')" class="mainImg" tabindex="0" src="./img/busan.jpg" alt="Busan">
+            <img aria-haspopup="dialog" aria-controls="dialog-box" onclick="openDialog('istanbul.jpg')" class="mainImg" tabindex="0" src="./img/istanbul.jpg" alt="Istanbul">
         </div>
 
-        <dialog class="dialogSection" id="dialog-box">
-
-
-                <div id="dialog-content">
-
-
+        <dialog  aria-controls="dialog-box" class="dialogSection" id="dialog-box" aria-labelledby="filename">
             <div class="dialogBtn">
-                <img onclick="closeDialog()" class="btnClose" id="close-btn" src="./logo/kreuzen.png" alt="X">
+                <img aria-label="Dialog schliessen" onclick="closeDialog()" class="btnClose" id="close-btn" tabindex="0" src="./logo/kreuzen.png" alt="Schliessen">
             </div>
 
             <div class="imgName" id="filename"></div>
@@ -60,25 +55,20 @@
             <div class="imgCounter" id="counter">1 / 18</div>
 
             <div class="directionContainer">
-                <img onclick=" prev()" class="backBtn" id="back-btn" src="./logo/pfeil-nach-links.png" alt="Zurück">
-                <img onclick="next()" class="nextBtn" id="next-btn" src="./logo/pfeil-rechts (1).png" alt="Weiter">
+                <img aria-label="Vorheriges Bild" onclick=" prev()" class="backBtn" id="back-btn" tabindex="0" src="./logo/pfeil-nach-links.png" alt="Zurück">
+                <img aria-label="Nächstes Bild" onclick="next()" class="nextBtn" id="next-btn" tabindex="0" src="./logo/pfeil-rechts (1).png" alt="Weiter">
             </div>
-
-            </div>
-
-
-
         </dialog>
 
     </main>
 
     <footer>
-        <div><img class="logoFooter" src="./logo/Fotogram_Logo.svg" alt=""></div>
+        <div><img class="logoFooter" src="./logo/Fotogram_Logo.svg" alt="Logo FotoGram"></div>
 
         <div class="socialmediaSection">
-            <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./logo/facebook.png" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="./logo/instagram-logo.png" alt=""></a>
-            <a target="_blank" href="https://x.com/"><img src="./logo/twitter.png" alt=""></a>
+            <a target="_blank" tabindex="0" href="https://www.facebook.com/?locale=de_DE"><img src="./logo/facebook.png" alt="Facebook"></a>
+            <a target="_blank" tabindex="0" href="https://www.instagram.com/"><img src="./logo/instagram-logo.png" alt="Instagram"></a>
+            <a target="_blank" tabindex="0" href="https://x.com/"><img src="./logo/twitter.png" alt="X"></a>
         </div>
     </footer>
 

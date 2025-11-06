@@ -1,220 +1,215 @@
 :root {
-    --main-color: antiquewhite;
-    --second-color: #D2B48C;
-    --font: 'Caprasimo', sans-serif;
+  --main-color: antiquewhite;
+  --second-color: #d2b48c;
+  --font: "Caprasimo", sans-serif;
 }
 
 @font-face {
-    font-family: 'Caprasimo';
-    src: url('./fonts/Caprasimo-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Caprasimo";
+  src: url("./fonts/Caprasimo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    margin: 0px;
-    background-color: var(--main-color);
+  margin: 0px;
+  background-color: var(--main-color);
 }
 
 header {
-    background-color: var(--second-color);
-    padding: 15px 0 15px 30px;
+  background-color: var(--second-color);
+  padding: 15px 0 15px 30px;
 }
 
 header img {
-    width: 450px;
+  width: 450px;
 }
 
 main h1 {
-    display: flex;
-    justify-content: center;
-    font-family: var(--font);
-    font-size: 36px;
-    font-weight: 400;
-    padding: 25px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font);
+  font-size: 36px;
+  font-weight: 400;
+  padding: 25px 0 15px 0;
 }
 
 .ImgSelector {
-    /*display: grid;*/
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 50px 16px 70px;
-    max-width: 1400px;
-    margin: 0 auto;
-    min-width: 0;
+  /*display: grid;*/
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 16px 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-width: 0;
 }
 
 main img {
-    width: 200px;
-    height: 200px;
-    border-radius: 16px;
-    object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 .mainImg:hover {
-    transform: scale(1.08);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 footer {
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 0 15px 0;
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0 15px 0;
 }
 
 .logoFooter {
-    width: 450px;
+  width: 450px;
 }
 
 .socialmediaSection {
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .socialmediaSection img {
-    width: 50px;
-    cursor: pointer;
+  width: 50px;
+  cursor: pointer;
 }
-
 
 /*Dialog style*/
 
-
 .dialogImg {
-    width: 200px;
-    height: 200px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dialogSection {
-    background-color: #e8cda9;
-    border-radius: 16px;
+  background-color: #e8cda9;
+  border-radius: 16px;
 }
 
 .dialogBtn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btnClose:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .backBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nextBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dialogBtn img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .directionContainer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .directionContainer img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .imgCounter,
 .imgName {
-    font-family: var(--font);
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  font-family: var(--font);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .dialogGallery {
-    width: 380px;
-    height: 380px;
-    margin-top: 10px;
-    object-fit: cover;
+  width: 380px;
+  height: 380px;
+  margin-top: 10px;
+  object-fit: cover;
 }
 
 @media (max-width: 747px) {
-    .socialmediaSection {
-        display: none;
-    }
+  .socialmediaSection {
+    display: none;
+  }
 }
 
 @media (max-width: 530px) {
-    header img {
-        width: 300px;
-    }
+  header img {
+    width: 300px;
+  }
 
-    .dialogGallery {
-        width: 280px;
-        height: 280px;
-    }
+  .dialogGallery {
+    width: 280px;
+    height: 280px;
+  }
 
-    main img {
-        width: 140px;
-        height: 140px;
-    }
+  main img {
+    width: 140px;
+    height: 140px;
+  }
 
-    .logoFooter {
-        width: 300px;
-    }
+  .logoFooter {
+    width: 300px;
+  }
 
-    main h1 {
-        font-size: 24px;
-    }
+  main h1 {
+    font-size: 24px;
+  }
 
-    .directionContainer img {
-        width: 40px;
-        height: 40px;
-    }
+  .directionContainer img {
+    width: 40px;
+    height: 40px;
+  }
 
-    .dialogBtn img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-
-
-@media (max-width: 430px) {
-    header img {
-        width: 200px;
-    }
-
-    .logoFooter {
-        width: 200px;
-    }
-
+  .dialogBtn img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 430px) {
-    .dialogGallery {
-        width: 230px;
-        height: 230px;
-    }
+  header img {
+    width: 200px;
+  }
 
-    .directionContainer img {
-        width: 30px;
-        height: 30px;
-    }
+  .logoFooter {
+    width: 200px;
+  }
+}
 
-    .dialogBtn img {
-        width: 30px;
-        height: 30px;
-    }
+@media (max-width: 430px) {
+  .dialogGallery {
+    width: 230px;
+    height: 230px;
+  }
+
+  .directionContainer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dialogBtn img {
+    width: 30px;
+    height: 30px;
+  }
 }
