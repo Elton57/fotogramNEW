@@ -62,11 +62,14 @@ function openDialog(imgName) {
   updateDialogImage();
 }
 
+function closeDialog() {
+  dialogRef.close();
+}
+
 dialogRef.addEventListener("click", function (event) {
   if (event.target === dialogRef) {
     dialogRef.close();
   }
-  dialogRef.close();
 });
 
 function updateDialogImage() {
